@@ -1,5 +1,5 @@
 # Mac user and node node_modules.
-.DS_Store/
+.DS_Store
 node_modules/
 
 
