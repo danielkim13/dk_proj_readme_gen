@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
+const genMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of answers gathered by for userPrompt
-const answerArray = [];
+// const answerArray = []; not gonna push it into array since an object w/ keys will be made by inquirer
 
 const userPrompt = () => {
   return inquirer
@@ -64,9 +64,9 @@ const userPrompt = () => {
       {
         type: "list",
         name: "license",
-        message: "What is the title of your project? (Required)",
-        choices: ["ISC", "MIT", "Apache 2.0", "GNU GPLv2", "GNU GPLv3"],
-        default: "ISC",
+        message: "Choose your license? (Required)",
+        choices: ["ISC", "MIT", "Apache 2.0", "GNU GPLv2", "GNU GPLv3", 'None'],
+        default: "None",
       },
       {
         type: "input",
