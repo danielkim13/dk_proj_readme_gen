@@ -65,7 +65,7 @@ const userPrompt = () => {
         type: "list",
         name: "license",
         message: "Choose your license? (Required)",
-        choices: ["ISC", "MIT", "Apache 2.0", "GNU GPLv2", "GNU GPLv3", 'None'],
+        choices: ["ISC", "MIT", "Apache 2.0", "GNU GPLv2", "GNU GPLv3", "None"],
         default: "None",
       },
       {
@@ -108,16 +108,12 @@ const userPrompt = () => {
       },
     ])
     .then((userResponse) => {
-      answerArray.push(userResponse);
+      console.log(userResponse);
     });
 };
 
-userPrompt();
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
+userPrompt();
