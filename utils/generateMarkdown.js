@@ -36,7 +36,7 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function genMarkdown(data) {
+function genMarkDown(data) {
   const { title, description, installation, usage, license, contributing, tests, gitHub, email } = data;
 
   return `# ${title}
@@ -44,40 +44,41 @@ function genMarkdown(data) {
 ${renderLicenseBadge(license)}
 
 ## Description
+  
   ${description}
-
-<hr />
 
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * ${renderLicenseLink(license)}
-* [Contributing](#contributing)
-* [Test](#tests)
+* [Contributing](#Contributing)
+* [Test](#test)
 * [Question](#question)
 
-<hr />
-
 ## Installation
+  
   ${installation}
 
 ## Usage
+  
   ${usage}
 
 ${renderLicenseSection(license)}
 
 ## Contributing
+  
   ${contributing}
 
 ## Test
+  
   ${tests}
 
 ## Question
-Please contact me if you have any questions!
-GitHub: [${gitHub}](https://github.com/${gitHub})
+Please contact me if you have any questions! <br />
+GitHub: [${gitHub}](https://github.com/${gitHub}) <br />
 E-mail address: ${email}
 `;
 }
 
-module.exports = genMarkdown;
+module.exports = genMarkDown;
