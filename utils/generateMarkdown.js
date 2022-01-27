@@ -41,11 +41,11 @@ function genMarkDown(data) {
 
   return `# ${title}
 
-${renderLicenseBadge(license)}
+  ${renderLicenseBadge(license)}
 
 ## Description
   
-  ${description}
+    ${description}
 
 ## Table of Contents
 
@@ -58,26 +58,26 @@ ${renderLicenseBadge(license)}
 
 ## Installation
   
-  ${installation}
+    ${installation}
 
 ## Usage
   
-  ${usage}
+    ${usage}
 
 ${renderLicenseSection(license)}
 
 ## Contributing
   
-  ${contributing}
+    ${contributing}
 
 ## Test
   
-  ${tests}
+    ${tests}
 
 ## Question
-Please contact me if you have any questions! <br />
-GitHub: [${gitHub}](https://github.com/${gitHub}) <br />
-E-mail address: ${email}
+> Please contact me if you have any questions! <br />
+> GitHub: [${gitHub}](https://github.com/${gitHub}) <br />
+> E-mail address: ${email}
 `;
 }
 
