@@ -21,6 +21,8 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license && license !== "None") {
     return `[License](#license)`;
+  } else {
+    return "";
   }
 }
 
