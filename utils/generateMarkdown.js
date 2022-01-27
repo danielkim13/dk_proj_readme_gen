@@ -77,6 +77,7 @@ ${renderLicenseSection(license)}
   ${tests}
 
 ## Question
+
 > Please contact me if you have any questions! <br />
 > GitHub: [${gitHub}](https://github.com/${gitHub}) <br />
 > E-mail address: ${email}
