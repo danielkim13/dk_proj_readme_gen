@@ -121,3 +121,4 @@ function writeToFile(data) {
 }
 // TODO: Create a function to initialize app
 userPrompt().then((userResponse) => writeToFile(userResponse));
+
